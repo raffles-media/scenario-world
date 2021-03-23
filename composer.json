@@ -1,0 +1,42 @@
+{
+    "name": "scenario/scenario-world",
+    "description": "Hello scenario package",
+    "keywords": [
+        "scenario",
+        "scenario-world"
+    ],
+    "homepage": "https://github.com/scenario/scenario-world",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Convertize",
+            "email": "info@convertize.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Scenario\\ScenarioWorld\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Scenario\\ScenarioWorld\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
